@@ -1,0 +1,21 @@
+// variables
+$website-width: 1200px;
+$main-color: #0a6ef1;
+$light-blue: #46c4ff;
+$main-color-light: #ba53ff;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: rgb(0, 0, 0);
+$light-grey: rgb(185, 185, 185);
+$dark-grey: rgb(124, 124, 124);
+$bg-image: url("../img/nasa-earth.jpg");
+$bg-banner-image: url("../img/space-banner.jpg");
+
+// set text color
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
